@@ -15,4 +15,6 @@ def matrix_transpose(matrix):
     Returns:
         a new matrix that is the transpose of the input matrix
     """
+    if not matrix or not matrix[0]:
+        return []
     return [[row[i] for row in matrix] for i in range(len(matrix[0]))]
